@@ -3,9 +3,11 @@ SET FEEDBACK OFF
 SET TRIMSPOOL ON
 SET PAGESIZE 0
 
--- Table 1 Export
-SPOOL E:\apex_github_sync\employees.csv
-SELECT * FROM pos.EMP;
-SPOOL OFF
+-- SPOOL command screen ke bajaye file mein data write karti hai
+SPOOL E:\git_hub\apex_github_sync\my_apex_data.csv
 
+-- Apni SQL Query
+SELECT * FROM EMP;
+
+SPOOL OFF
 EXIT;

@@ -10,7 +10,7 @@ call E:\database_oracle_apex\sqlcl\sqlcl\bin\sql.exe -thin sys/Oracle_12345@loca
 
 echo.
 echo Step 3: Committing and Pushing Data to GitHub...
-git add .
+git add my_apex_data.csv export_script.sql run_sync.bat
 git commit -m "Auto Update DB Data: %date% %time%"
 git push origin main
 
