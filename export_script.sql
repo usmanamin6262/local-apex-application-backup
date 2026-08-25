@@ -1,0 +1,11 @@
+SET SQLFORMAT CSV
+SET FEEDBACK OFF
+SET TRIMSPOOL ON
+SET PAGESIZE 0
+
+-- Table 1 Export
+SPOOL E:\apex_github_sync\employees.csv
+SELECT * FROM pos.EMP;
+SPOOL OFF
+
+EXIT;
