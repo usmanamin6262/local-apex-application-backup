@@ -7,7 +7,7 @@ SET PAGESIZE 0
 SPOOL E:\git_hub\apex_github_sync\my_apex_data.csv
 
 -- Apni SQL Query
-SELECT * FROM EMP;
+SELECT * FROM pos.EMP;
 
 SPOOL OFF
 EXIT;
